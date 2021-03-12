@@ -1,0 +1,25 @@
+{
+    "name": "fraudrules",
+    "displayName": "FraudRules Language",
+    "description": "Fraud Rules language syntax highlight",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fraudrules",
+            "aliases": ["Fraud Rules", "fraudrules"],
+            "extensions": [".fr .fraudrule"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fraudrules",
+            "scopeName": "source.fraudrules",
+            "path": "./syntaxes/fraudrules.tmLanguage"
+        }]
+    }
+}
